@@ -1,0 +1,175 @@
+/* styling body for animations background */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+body,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+#heading {
+  text-align: center;
+}
+
+/* Header styling */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  position: relative;
+  z-index: 2;
+}
+
+label[for="date"] {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Navigation styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0 20px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li {
+  margin: 0 10px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+/* Styling for footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+}
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+.input-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.input-group input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.input-group button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.output {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.results-container {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.result-box{
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {  
+  .container {
+      grid-template-columns: 1fr;
+  }
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 3;
+  }
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    text-align: right;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  .nav-list.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .nav-list li {
+    margin: 10px 20px;
+  }
+
+}

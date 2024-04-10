@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore exciting car ride adventures with CarRide Adventures.">
+    <meta name="keywords" content="car ride, road trip, adventure, travel">
+     <!-- Include the Roboto font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_request.css">
+    <title>CarRide Adventures</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">CarRide Adventures</div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="request.html">Request</a></li>
+                <li><a href="trip.html">Post a Trip</a></li>
+                <li><a href="find.html">Search</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form">
+            <div class="container">
+               
+                <div class="display-grid">
+                   
+                    <form class="form">
+                        <h1 class="heading">Post a Request</h1>
+                        <p class="smallHeading">Get notified when new trips match your travel needs</p>
+                    
+                        <div class="inputFields">
+                            <label for="origin">Origin:</label>
+                            <input class="textField" type="text" id="origin" name="origin" placeholder="From" required>
+                        </div>
+                    
+                        <div class="inputFields">
+                            <label for="destination">Destination:</label>
+                            <input class="textField" type="text" id="destination" name="destination" placeholder="To" required>
+                        </div>
+                    
+                        <div class="inputFields">
+                            <label for="leaving">Leaving:</label>
+                            <input class="textField" type="date" id="leaving" name="leaving" required>
+                        </div>
+                    
+                        <div class="inputFields">
+                            <label for="seats">Seats Required:</label>
+                            <input class="textField" type="number" id="seats" name="seats" placeholder="seats" required>
+                        </div>
+                    
+                        <div class="inputFields">
+                            <label for="description">Description:</label>
+                            <textarea class="textField valid" name="description" cols="40" rows="10" maxlength="1024"
+                                id="description"
+                                placeholder="Tell drivers about your ride (this helps to get accepted on trips)"
+                                aria-invalid="false"></textarea>
+                        </div>
+                    
+                        <div class="inputFields">
+                            <label>Pet Friendly:</label>
+                            <div>
+                                <label>
+                                    <input type="radio" name="petFriendly" value="yes">
+                                    Yes
+                                </label>
+                                <label>
+                                    <input type="radio" name="petFriendly" value="no">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+                    
+                        <input class="button" type="submit" value="Post Request">
+                    </form>
+            
+            
+                
+                    <div class="right-card">
+                        <div class="inner-card">
+                            <h1>Driving somewhere?</h1>
+                            <div class="grid-3layout">
+                                    <h3>City A</h3>
+                                    <img src="img/auto.png" alt="car icon" class="image">
+                                    <h3>City B</h3>
+                            </div>
+                            <p>Post empty seats and collect money to cover your driving costs.<br>
+                                <a href="trip.html" class="btn">Post your Trip</a>
+                            </p>
+                       </div>
+                    </div>
+            
+            </div>
+
+
+            </div>
+        </section>
+        
+        <div class="bottom-card">
+            <h1>Trust and Safety</h1>
+            <p>Join 800,000+ people who carpool between cities in Canada. Free sign up.<br>
+                <a href="#" class="btn">Learn More</a>
+            </p>
+
+        </div>
+
+     
+
+    </main>
+    <footer>
+        <p>&copy; 2023 CarRide Adventures. All rights reserved.</p>
+    </footer>
+    <script src="Js/main.js"></script>
+</body>
+
+</html>
